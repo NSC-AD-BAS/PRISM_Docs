@@ -1,0 +1,150 @@
+
+### User Stories
+
+#### For Faculty
+
+0. I want to be able to log in and only be allowed in if I am on a known list of faculty members, with a username and password. This list can be static to start. (See Admin requirements for extensions).
+        - PRIORITY: 1
+
+1. I want to be able to view all students in a tabular list or one at a time (with next/previous navigation). Ideally, my choice is sticky in my web browser OR with my account.
+        - PRIORITY: 1
+
+2. I want to be able to quickly view only students in a given cohort (year).  Ideally, my choice is sticky in my web browser OR with my account.
+        - PRIORITY: 1
+
+3. I want to be able to filter out students who have a non-active Active Status with a simple click. Ideally, this is sticky in my web browser OR with my account.
+        - PRIORITY: 1
+
+4. I want to be able to use my NetID and password to log in.
+        - PRIORITY: 2
+
+5. I want to be able to add new students. Required minimum fields will be First and Last names, SID, and Cohort / Year. Everything else should be optional for now.
+        - PRIORITY: 1
+
+6. I want to be able to update any field for any student.
+        - PRIORITY: 1
+
+
+#### For Admin
+
+0. I want to be able to log in and only be allowed in if I am on a known list of administrators, with a username and password. (See also Faculty: 4)
+        - PRIORITY: 2
+
+1. I want to be able to add or remove members from the Faculty and Admin groups.
+        - PRIORITY: 2
+
+2. I want to be able to archive students. I should be prompted with a confirmation. There should be a way to view the archive and unarchive students. (?)
+        - PRIORITY: 3
+
+3. I want to be able to permanently delete students in the archive. This should be prompted with another confirmation. (?)
+        - PRIORITY: 3
+
+4. I want to be able to add custom text or date fields to all student records. 
+        - PRIORITY: 3
+
+5. I want to be able to add custom option (drop-down list) fields for all student records, including a new list of options.
+        - PRIORITY: 3
+
+6. I want to be able to see a log of all changes to all records. This doesn't have to be "pretty" or allow any sort of "undo" but it should allow a person to see that, say, a field had been updated to accidentally remove someones name.
+        - PRIORITY: 2
+
+
+#### For Students
+
+0. I want to be able to log in if I am a student that is in the system. (See also Faculty: 4)
+        - PRIORITY: 1
+
+1. I want to be able to view all the organizations.
+        - PRIORITY: 1
+
+2. I want to be able to view all postings for a given organization (and optional a list of all postings for all organizations).
+        - PRIORITY: 1
+
+3. I want to be able to filter postings by Active status or other attributes.
+        - PRIORITY: 2
+
+4. I want to be able to update certain aspects of my own record
+        - PRIORITY: 1
+
+5. I want to be able to search for internships by plaintext search.
+        - PRIORITY: 2
+
+#### All
+
+0. I want to be able to access this information from Chrome / FF / IE 11 or better / Safari on desktop and mobile. (I.e. don't do anything crazy with the UI).
+        - PRIORITY: 1
+
+1. The site should be a secure HTTPS site and, eventually, hosted by NSC IT.
+        - PRIORITY: 1
+
+
+### Data
+
+#### General Student
+
+- username (R - to start… may be replaced by SID or email login)
+- First Name (R - required)
+- Last Name (R)
+- SID (R)
+- Cohort (R - year, e.g. 2014, 2015)
+- Street Address / City / State / Zip
+- Email Address (Form Check)
+- Phone Contact (Form Check)
+- Picture 
+- Notes 
+
+#### Program Data
+
+- Financial Aid Status (Applied, Did Not Apply, VA, Unknown, Other)
+- Provisional Request (Has Tuition Waiver, Unknown, Other)
+- Acceptance Criteria 
+- Active Status (Applied, Pending Review, Active, Withdrawn, Non-Matriculated, Running Start, Unknown, Other) (R - default Unknown)
+
+#### Internship Data
+
+- Last Contact Int/Cap (Date)
+- Int/Capstone Update
+- Int/Capstone Organization
+- Int/Capstone Status (Unknown, Looking, Found, Complete, In Progress, N/A)
+- Int/Capstone Completion Date (Quarter, Year)
+
+#### Completion
+
+- Graduation Date
+- Employment Status
+- Employment Organization
+
+#### Auto
+
+- Last Updated (Date)
+- Last Updated By (User)
+
+### Internships
+
+- Organization Name 
+- Description 
+- Listing URL
+- Date Posted
+- Date Updated
+- Active Status
+
+### Organization
+
+- Organization Name
+- Organization URL
+- Industry / Size / Revenue 
+- Active Posts of Internships (list / jump)
+- Primary Contact Name
+- Primary Contact Email
+- Primary Contact Phone
+- Logo (Picture)
+- Notes
+
+
+### Faculty and Admin
+
+- username (R- to start… may be replaced by SID or email login)
+- SID 
+- First Name
+- Last Name 
+- Picture
